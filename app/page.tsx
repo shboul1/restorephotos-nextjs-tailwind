@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Line from "@/components/Line";
 import Image from "next/image";
+import PeopleSaid from "@components/PeopleSaid";
+import Footer from "@components/Footer";
+
 export default function Home() {
   return (
     <div className="flex w-fullh-screen max-w-4xl container mx-auto px-6 flex-col">
@@ -51,6 +54,20 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className="my-2">
+          <p className="font-semibold text-3xl sm:text-5xl text-center">
+            Loved by many worldwide.
+          </p>
+          <p className="text-center text-sm mt-4 text-gray-500">
+            See what our 300,000+ users are saying about the product.
+          </p>
+        </div>
+        <div className="flex py-10 flex-wrap gap-10 justify-center">
+          {new Array(3).fill("*").map((_) => (
+            <PeopleSaid />
+          ))}
+        </div>
+        <Footer />
       </main>
     </div>
   );
