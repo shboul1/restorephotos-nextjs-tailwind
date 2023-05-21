@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Line from "@/components/Line";
 import Image from "next/image";
 import PeopleSaid from "@components/PeopleSaid";
@@ -7,7 +6,6 @@ import Footer from "@components/Footer";
 export default function Home() {
   return (
     <div className="flex w-fullh-screen max-w-4xl container mx-auto px-6 flex-col">
-      <Navbar />
       <main className="flex w-full justify-center items-center flex-col">
         <a className="mb-8 border rounded-2xl p-1 text-xs text-center cursor-pointer text-slate-500 px-2 hover:scale-105 transition duration-300 ease-in-out">
           Used Over <span className="font-semibold">300,000</span> Happy Users
